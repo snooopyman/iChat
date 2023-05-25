@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		475132982A1FE4A400B699E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475132972A1FE4A400B699E8 /* AppDelegate.swift */; };
 		4751329A2A1FE4A400B699E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475132992A1FE4A400B699E8 /* SceneDelegate.swift */; };
-		4751329C2A1FE4A400B699E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4751329B2A1FE4A400B699E8 /* ViewController.swift */; };
+		4751329C2A1FE4A400B699E8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4751329B2A1FE4A400B699E8 /* WelcomeViewController.swift */; };
 		4751329F2A1FE4A400B699E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4751329D2A1FE4A400B699E8 /* Main.storyboard */; };
 		475132A12A1FE4A500B699E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475132A02A1FE4A500B699E8 /* Assets.xcassets */; };
 		475132A42A1FE4A500B699E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475132A22A1FE4A500B699E8 /* LaunchScreen.storyboard */; };
+		475132B42A200C4300B699E8 /* Broken Hearts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 475132B22A200C4300B699E8 /* Broken Hearts.jpg */; };
+		475132B52A200C4300B699E8 /* Sand to Blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 475132B32A200C4300B699E8 /* Sand to Blue.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		475132942A1FE4A400B699E8 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475132972A1FE4A400B699E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		475132992A1FE4A400B699E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4751329B2A1FE4A400B699E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4751329B2A1FE4A400B699E8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4751329E2A1FE4A400B699E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		475132A02A1FE4A500B699E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475132A32A1FE4A500B699E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475132A52A1FE4A500B699E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475132B22A200C4300B699E8 /* Broken Hearts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Broken Hearts.jpg"; sourceTree = "<group>"; };
+		475132B32A200C4300B699E8 /* Sand to Blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sand to Blue.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				475132972A1FE4A400B699E8 /* AppDelegate.swift */,
 				475132992A1FE4A400B699E8 /* SceneDelegate.swift */,
-				4751329B2A1FE4A400B699E8 /* ViewController.swift */,
-				4751329D2A1FE4A400B699E8 /* Main.storyboard */,
+				475132AD2A1FE5B500B699E8 /* Models */,
+				475132AC2A1FE59100B699E8 /* Views */,
+				475132AB2A1FE57F00B699E8 /* Controllers */,
 				475132A02A1FE4A500B699E8 /* Assets.xcassets */,
 				475132A22A1FE4A500B699E8 /* LaunchScreen.storyboard */,
 				475132A52A1FE4A500B699E8 /* Info.plist */,
+				475132B22A200C4300B699E8 /* Broken Hearts.jpg */,
+				475132B32A200C4300B699E8 /* Sand to Blue.jpg */,
 			);
 			path = iChat;
+			sourceTree = "<group>";
+		};
+		475132AB2A1FE57F00B699E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4751329B2A1FE4A400B699E8 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		475132AC2A1FE59100B699E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4751329D2A1FE4A400B699E8 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		475132AD2A1FE5B500B699E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475132B52A200C4300B699E8 /* Sand to Blue.jpg in Resources */,
+				475132B42A200C4300B699E8 /* Broken Hearts.jpg in Resources */,
 				475132A42A1FE4A500B699E8 /* LaunchScreen.storyboard in Resources */,
 				475132A12A1FE4A500B699E8 /* Assets.xcassets in Resources */,
 				4751329F2A1FE4A400B699E8 /* Main.storyboard in Resources */,
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4751329C2A1FE4A400B699E8 /* ViewController.swift in Sources */,
+				4751329C2A1FE4A400B699E8 /* WelcomeViewController.swift in Sources */,
 				475132982A1FE4A400B699E8 /* AppDelegate.swift in Sources */,
 				4751329A2A1FE4A400B699E8 /* SceneDelegate.swift in Sources */,
 			);
