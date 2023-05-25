@@ -13,8 +13,6 @@
 		4751329F2A1FE4A400B699E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4751329D2A1FE4A400B699E8 /* Main.storyboard */; };
 		475132A12A1FE4A500B699E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475132A02A1FE4A500B699E8 /* Assets.xcassets */; };
 		475132A42A1FE4A500B699E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475132A22A1FE4A500B699E8 /* LaunchScreen.storyboard */; };
-		475132B42A200C4300B699E8 /* Broken Hearts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 475132B22A200C4300B699E8 /* Broken Hearts.jpg */; };
-		475132B52A200C4300B699E8 /* Sand to Blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 475132B32A200C4300B699E8 /* Sand to Blue.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		475132A02A1FE4A500B699E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475132A32A1FE4A500B699E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475132A52A1FE4A500B699E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		475132B22A200C4300B699E8 /* Broken Hearts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Broken Hearts.jpg"; sourceTree = "<group>"; };
-		475132B32A200C4300B699E8 /* Sand to Blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sand to Blue.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +64,6 @@
 				475132A02A1FE4A500B699E8 /* Assets.xcassets */,
 				475132A22A1FE4A500B699E8 /* LaunchScreen.storyboard */,
 				475132A52A1FE4A500B699E8 /* Info.plist */,
-				475132B22A200C4300B699E8 /* Broken Hearts.jpg */,
-				475132B32A200C4300B699E8 /* Sand to Blue.jpg */,
 			);
 			path = iChat;
 			sourceTree = "<group>";
@@ -155,8 +149,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				475132B52A200C4300B699E8 /* Sand to Blue.jpg in Resources */,
-				475132B42A200C4300B699E8 /* Broken Hearts.jpg in Resources */,
 				475132A42A1FE4A500B699E8 /* LaunchScreen.storyboard in Resources */,
 				475132A12A1FE4A500B699E8 /* Assets.xcassets in Resources */,
 				4751329F2A1FE4A400B699E8 /* Main.storyboard in Resources */,
