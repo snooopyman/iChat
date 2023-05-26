@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Broken Hearts.jpg",
+      "filename" : "b799ff.png",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "Broken Hearts 1.jpg",
+      "filename" : "b799ff 1.png",
       "idiom" : "universal"
     },
     {
@@ -21,7 +21,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Sand to Blue 2.jpg",
+      "filename" : "dark.png",
       "idiom" : "universal"
     }
   ],
