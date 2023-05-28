@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -30,6 +31,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" name="LabelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="S20-Dz-ybR" kind="show" id="UBr-iS-vVy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVA-Xq-rbd">
                                 <rect key="frame" x="0.0" y="703" width="393" height="70"/>
@@ -40,6 +44,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" name="LabelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Zu2-Vs-pdU" kind="show" id="8TX-gQ-OzE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iChat💥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkI-eQ-ckc">
                                 <rect key="frame" x="99" y="390" width="225" height="72"/>
@@ -63,12 +70,12 @@
             </objects>
             <point key="canvasLocation" x="79" y="178"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="Vqd-Xm-nZa">
             <objects>
-                <viewController id="S20-Dz-ybR" sceneMemberID="viewController">
+                <viewController id="S20-Dz-ybR" customClass="RegisterViewController" customModule="iChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU7-zm-JUu">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fkO-bO-xcO" customClass="RegisterViewController">
@@ -113,17 +120,18 @@
                         <viewLayoutGuide key="safeArea" id="OQV-bz-naR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IDU-Pm-OqF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7v-FS-bFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1340" y="-229"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ijY-JD-t08">
             <objects>
-                <viewController id="Zu2-Vs-pdU" sceneMemberID="viewController">
+                <viewController id="Zu2-Vs-pdU" customClass="LoginViewController" customModule="iChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jR5-rs-Den">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HLY-UZ-xmQ">
@@ -160,15 +168,16 @@
                         <viewLayoutGuide key="safeArea" id="GKy-21-uAG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tmU-BG-znK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59g-v8-bio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1340" y="620"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="EOf-4G-6iY">
             <objects>
-                <viewController id="vOj-ME-Qb4" sceneMemberID="viewController">
+                <viewController id="vOj-ME-Qb4" customClass="ChatViewController" customModule="iChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q23-Ov-BeW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
