@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
         let titleText = "iChat💥"
         
         for letter in titleText {
-            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { timer in
+            Timer.scheduledTimer(withTimeInterval: 0.2 * charIndex, repeats: false) { timer in
                 self.titleLabel.text?.append(letter)
             }
             charIndex += 1

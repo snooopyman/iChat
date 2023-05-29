@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -118,12 +118,21 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" name="LabelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="S20-Dz-ybR" eventType="touchUpInside" id="1Pr-nx-tar"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OQV-bz-naR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="IDU-Pm-OqF"/>
+                    <connections>
+                        <outlet property="emailField" destination="9dV-Ee-QLB" id="l74-QF-zcX"/>
+                        <outlet property="nickNameField" destination="aDZ-JA-ede" id="aGf-aW-FBe"/>
+                        <outlet property="passwordField" destination="1qH-1b-rI4" id="2ul-zE-8UR"/>
+                        <segue destination="vOj-ME-Qb4" kind="show" identifier="RegisterToChat" id="Lzj-dT-x5J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7v-FS-bFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,12 +175,20 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" name="LabelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="Zu2-Vs-pdU" eventType="touchUpInside" id="Qtm-2c-xeO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GKy-21-uAG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="tmU-BG-znK"/>
+                    <connections>
+                        <outlet property="emailField" destination="99p-hE-Euj" id="BUO-PQ-KHR"/>
+                        <outlet property="passwordField" destination="g8f-J3-O1S" id="Cnx-7k-OGp"/>
+                        <segue destination="vOj-ME-Qb4" kind="show" identifier="LoginToChat" id="Cko-rL-LRb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59g-v8-bio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,7 +199,7 @@
             <objects>
                 <viewController id="vOj-ME-Qb4" customClass="ChatViewController" customModule="iChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q23-Ov-BeW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="MpW-i0-YYA">
@@ -215,12 +232,16 @@
                         <viewLayoutGuide key="safeArea" id="pid-dW-Xci"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="skb-ES-Bmy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMQ-zt-u05" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2767" y="177"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lzj-dT-x5J"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="500" height="500"/>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
