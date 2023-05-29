@@ -16,6 +16,7 @@
 		475132B92A214A6F00B699E8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475132B82A214A6F00B699E8 /* RegisterViewController.swift */; };
 		475132CB2A2398EE00B699E8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475132CA2A2398EE00B699E8 /* LoginViewController.swift */; };
 		475132CD2A23990500B699E8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475132CC2A23990500B699E8 /* ChatViewController.swift */; };
+		475924352A24EF9F00654835 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 475924342A24EF9F00654835 /* GoogleService-Info.plist */; };
 		9C209B3F9DD9717D4CC1ABC8 /* Pods_iChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419888390ECA15031A07B21F /* Pods_iChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		475132B82A214A6F00B699E8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		475132CA2A2398EE00B699E8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		475132CC2A23990500B699E8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		475924342A24EF9F00654835 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B98EED4256C6A6ED07C7F68 /* Pods-iChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChat.release.xcconfig"; path = "Target Support Files/Pods-iChat/Pods-iChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				475132A02A1FE4A500B699E8 /* Assets.xcassets */,
 				475132A22A1FE4A500B699E8 /* LaunchScreen.storyboard */,
 				475132A52A1FE4A500B699E8 /* Info.plist */,
+				475924342A24EF9F00654835 /* GoogleService-Info.plist */,
 			);
 			path = iChat;
 			sourceTree = "<group>";
@@ -121,7 +124,6 @@
 				3EBC912B0487D3388412FBB8 /* Pods-iChat.debug.xcconfig */,
 				4B98EED4256C6A6ED07C7F68 /* Pods-iChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,6 +138,7 @@
 				475132902A1FE4A400B699E8 /* Sources */,
 				475132912A1FE4A400B699E8 /* Frameworks */,
 				475132922A1FE4A400B699E8 /* Resources */,
+				AE552822BCB609CF40928509 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				475132A42A1FE4A500B699E8 /* LaunchScreen.storyboard in Resources */,
+				475924352A24EF9F00654835 /* GoogleService-Info.plist in Resources */,
 				475132A12A1FE4A500B699E8 /* Assets.xcassets in Resources */,
 				4751329F2A1FE4A400B699E8 /* Main.storyboard in Resources */,
 			);
@@ -213,6 +217,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE552822BCB609CF40928509 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iChat/Pods-iChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iChat/Pods-iChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iChat/Pods-iChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
